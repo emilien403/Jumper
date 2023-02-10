@@ -1,0 +1,12 @@
+
+SPECIFY
+a. It should move forward one step
+b. It should act as if it was traveling in a straight line (the grid wraps around).
+c. The grid wraps around so it will appear form the bottom if it is facing the top edge.
+d. Treat the actor like a rock. The object with a location with the lowest compareTo() will go first, as usual.
+e. Treat the jumper like a rock and jump over it.
+f. If there are "n" rocks/flowers in front of a jumper, consecutively, then the jumper should wait "n-1" turns to jump over both obstacles.
+
+As the Jumper is waiting, there should be a check of how many obstacles are blocking the jumper. If the space in front of the jumper opens up, then the jumper should move.
+If the jumper becomes more blocked, it should wait the same amount but recalculated from how many objects are blocking the jumper subtracted from the number of turns it already waited.
+The same thing applies if the jumper becomes less blocked, only the jumper should move sooner accordingly.
